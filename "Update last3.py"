@@ -11,8 +11,8 @@ from telegram.ext import (
 )
 
 # --- CONFIG ---
-BOT_TOKEN = "8416807013:AAHCFc5cgU7VSmlU60eI-H2OeuNc8nss9eA"   # သင့်ရဲ့ BotFather က token ထည့်ပါ
-ADMIN_ID = 1873439855                # သင့်ရဲ့ Telegram ID ထည့်ပါ
+BOT_TOKEN = os.getenv("BOT_TOKEN")# သင့်ရဲ့ BotFather က token ထည့်ပါ
+ADMIN_ID = int(os.getenv("ADMIN_ID"))            # သင့်ရဲ့ Telegram ID ထည့်ပါ
 
 # --- Logging ---
 logging.basicConfig(
